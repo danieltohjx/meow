@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Correct Choice</title>
+  <style>
+    :root{
+      --pink-1:#ffe6ef;
+      --pink-2:#ffd3e2;
+      --card:#ffffffcc;
+      --text:#6b2b3a;
+      --shadow: 0 18px 45px rgba(0,0,0,.12);
+      --radius: 26px;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 20% 15%, #fff 0%, transparent 60%),
+        radial-gradient(900px 500px at 80% 85%, #fff 0%, transparent 60%),
+        linear-gradient(180deg, var(--pink-2), var(--pink-1));
+      overflow:hidden;
+    }
+    .card{
+      width:min(720px, 92vw);
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,.65);
+      padding: 34px 28px;
+      text-align:center;
+    }
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(26px, 3.6vw, 44px);
+      font-weight: 900;
+    }
+    p{
+      margin: 10px 0 0;
+      font-size: 18px;
+      line-height: 1.5;
+      opacity:.95;
+    }
+    .line{
+      margin-top: 18px;
+      font-size: 16px;
+      opacity:.8;
+    }
+    .btn{
+      margin-top: 22px;
+      display:inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: rgba(255,79,135,.14);
+      border: 1px solid rgba(255,79,135,.35);
+      color: var(--text);
+      text-decoration:none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>EASY.</h1>
+    <p>
+      Of course you clicked <b>Yes</b>.<br>
+      You had zero chance against my UI design.
+    </p>
+    <div class="line"></div>
+    <a class="btn" href="index.html">Replay</a>
+  </div>
+</body>
+</html>
